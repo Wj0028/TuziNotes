@@ -561,7 +561,7 @@ https://vue3js.cn/vue-composition-api/#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%9
 
 ### 19.1、什么是组合式 API
 
-![image-20220620194238746](./images/image-20220620194238746.png)
+<!-- ![image-20220620194238746](./images/image-20220620194238746.png) -->
 
 ### 19.2、举一个例子
 

@@ -2,12 +2,18 @@ lockfileVersion: 5.4
 
 specifiers:
   '@vuepress/client': 2.0.0-beta.61
+  cross-env: ^7.0.3
+  increase-memory-limit: ^1.0.7
   vue: ^3.2.47
   vuepress: 2.0.0-beta.61
   vuepress-theme-hope: 2.0.0-beta.193
 
+dependencies:
+  increase-memory-limit: 1.0.7
+
 devDependencies:
   '@vuepress/client': 2.0.0-beta.61
+  cross-env: 7.0.3
   vue: 3.2.47
   vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
   vuepress-theme-hope: 2.0.0-beta.193_44bug2q4gvgfsg4b36ccgweufe
@@ -2398,7 +2404,6 @@ packages:
 
   /balanced-match/1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
-    dev: true
 
   /balloon-css/1.2.0:
     resolution: {integrity: sha512-urXwkHgwp6GsXVF+it01485Z2Cj4pnW02ICnM0TemOlkKmCNnDLmyy+ZZiRXBpwldUXO+aRNr7Hdia4CBvXJ5A==}
@@ -2453,7 +2458,6 @@ packages:
     dependencies:
       balanced-match: 1.0.2
       concat-map: 0.0.1
-    dev: true
 
   /brace-expansion/2.0.1:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
@@ -2665,7 +2669,6 @@ packages:
 
   /concat-map/0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
-    dev: true
 
   /connect-history-api-fallback/2.0.0:
     resolution: {integrity: sha512-U73+6lQFmfiNPrYbXqr6kZ1i1wiRqXnp2nhMsINseWXO8lDau0LGEffJ8kQi4EjLZympVgRdvqjAgiZ1tgzDDA==}
@@ -2697,6 +2700,14 @@ packages:
     resolution: {integrity: sha512-AzlgcsCbUMymkADOJtQm3wO9S3ltPfYOFD5033keQn9NJzIbtnZj+UdBJe7DYml/8TdbtHJW3j58SOnKhWY/5g==}
     dependencies:
       layout-base: 2.0.1
+    dev: true
+
+  /cross-env/7.0.3:
+    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
+    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
+    hasBin: true
+    dependencies:
+      cross-spawn: 7.0.3
     dev: true
 
   /cross-spawn/7.0.3:
@@ -3411,7 +3422,6 @@ packages:
 
   /fs.realpath/1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
-    dev: true
 
   /fsevents/2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
@@ -3496,7 +3506,6 @@ packages:
       minimatch: 3.1.2
       once: 1.4.0
       path-is-absolute: 1.0.1
-    dev: true
 
   /globals/11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
@@ -3660,16 +3669,21 @@ packages:
       sax: 1.2.1
     dev: true
 
+  /increase-memory-limit/1.0.7:
+    resolution: {integrity: sha512-ozyn+HHAPD9VxMT1U50A7G8XXlktUWhnnEDYSeDYnQjKsNrBWHqq6XfEA0uhMdDPD+q/7rXWlzF1CbXX/c1LiQ==}
+    hasBin: true
+    dependencies:
+      glob: 7.2.3
+    dev: false
+
   /inflight/1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
     dependencies:
       once: 1.4.0
       wrappy: 1.0.2
-    dev: true
 
   /inherits/2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
-    dev: true
 
   /insane/2.6.2:
     resolution: {integrity: sha512-BqEL1CJsjJi+/C/zKZxv31zs3r6zkLH5Nz1WMFb7UBX2KHY2yXDpbFTSEmNHzomBbGDysIfkTX55A0mQZ2CQiw==}
@@ -4181,7 +4195,6 @@ packages:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
     dependencies:
       brace-expansion: 1.1.11
-    dev: true
 
   /minimatch/5.1.6:
     resolution: {integrity: sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==}
@@ -4269,7 +4282,6 @@ packages:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
     dependencies:
       wrappy: 1.0.2
-    dev: true
 
   /onetime/5.1.2:
     resolution: {integrity: sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==}
@@ -4350,7 +4362,6 @@ packages:
   /path-is-absolute/1.0.1:
     resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /path-key/3.1.1:
     resolution: {integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==}
@@ -5629,47 +5640,6 @@ packages:
       - supports-color
     dev: true
 
-  /vuepress-plugin-search-pro/2.0.0-beta.193_44bug2q4gvgfsg4b36ccgweufe:
-    resolution: {integrity: sha512-VvDiydQs340nEnffxI/2zEkMUb7l1D7K2TlAmFLL1hE31DapfsZzxe9EMA3b6HJ2JQd5lMK1OOYzTAvWDkEwvA==}
-    engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
-    peerDependencies:
-      '@vuepress/client': 2.0.0-beta.61
-      sass-loader: ^13.2.0
-      vuepress: 2.0.0-beta.61
-      vuepress-vite: 2.0.0-beta.61
-      vuepress-webpack: 2.0.0-beta.61
-    peerDependenciesMeta:
-      '@vuepress/client':
-        optional: true
-      sass-loader:
-        optional: true
-      vuepress:
-        optional: true
-      vuepress-plugin-sass-palette:
-        optional: true
-      vuepress-shared:
-        optional: true
-      vuepress-vite:
-        optional: true
-      vuepress-webpack:
-        optional: true
-    dependencies:
-      '@vuepress/client': 2.0.0-beta.61
-      '@vuepress/shared': 2.0.0-beta.61
-      '@vuepress/utils': 2.0.0-beta.61
-      '@vueuse/core': 9.13.0_vue@3.2.47
-      cheerio: 1.0.0-rc.12
-      chokidar: 3.5.3
-      vue: 3.2.47
-      vue-router: 4.1.6_vue@3.2.47
-      vuepress: 2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
-      vuepress-plugin-sass-palette: 2.0.0-beta.193_44bug2q4gvgfsg4b36ccgweufe
-      vuepress-shared: 2.0.0-beta.193_44bug2q4gvgfsg4b36ccgweufe
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - supports-color
-    dev: true
-
   /vuepress-plugin-seo2/2.0.0-beta.193_44bug2q4gvgfsg4b36ccgweufe:
     resolution: {integrity: sha512-Mw2IuKjvL5d08mMh87dCdIR+fRRM/prll+2lIsjSByAoW2A0CP7nV58XIKO2bMoDikGL44dom9qkrL8FP4Oh7A==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
@@ -6140,7 +6110,6 @@ packages:
 
   /wrappy/1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
-    dev: true
 
   /xml-js/1.6.11:
     resolution: {integrity: sha512-7rVi2KMfwfWFl+GpPg6m80IVMWXLRjO+PxTq7V2CDhoGak0wzYzFgUY2m4XJ47OGdXd8eLE8EmwfAmdjw7lC1g==}

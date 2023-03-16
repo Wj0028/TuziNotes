@@ -8,7 +8,9 @@ title: Vuex
 
 在这样的情况下就要用到 vuex(共享状态管理工具). 只能在 vue 中使用, 集中式的存储状态, 更新和使用状态都要按照 vuex 的规则来运行.
 
-![](vuex.assets/vuex.png)
+<!-- ![11](/public/images/vuex.png) -->
+
+[asdfcsa.png](https://postimg.cc/bG09Xrs7)
 
 什么时候使用 vuex? vuex 之前已经有这样的状态管理的解决方案:flux -> redux 等等, 在 flux 和 redux 的概念有一点说的很好, flux 就像眼镜一样, 当你觉得需要用到的时候就可以用.
 
