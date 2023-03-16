@@ -1,24 +1,33 @@
-import { defineUserConfig } from "vuepress";
-import theme from "./theme.js";
+import { defineUserConfig } from 'vuepress';
+import { hopeTheme } from 'vuepress-theme-hope';
+import theme from './theme.js';
 
 export default defineUserConfig({
-  base: "/",
+	// theme: hopeTheme({
 
-  locales: {
-    "/": {
-      lang: "en-US",
-      title: "Docs Demo",
-      description: "A docs demo for vuepress-theme-hope",
-    },
-    "/zh/": {
-      lang: "zh-CN",
-      title: "文档演示",
-      description: "vuepress-theme-hope 的文档演示",
-    },
-  },
+	// }),
+	base: '/',
+	head: [
+		// 设置 favor.ico，docs/.vuepress/public 下
+		['link', { rel: 'icon', href: '/images/Rab4.png' }],
+	],
+	locales: {
+		'/': {
+			lang: 'zh-CN',
+			title: '吃兔子的鱼香肉丝',
+			description: '吃鱼香肉丝的🐇 HOME',
+		},
+	},
 
-  theme,
+	theme,
 
-  // Enable it with pwa
-  // shouldPrefetch: false,
+	// Enable it with pwa
+	// shouldPrefetch: false,
 });
+// .vuepress/config.ts
+// import { defineUserConfig } from "vuepress";
+// import { hopeTheme } from "vuepress-theme-hope";
+
+// export default defineUserConfig({
+
+// });
