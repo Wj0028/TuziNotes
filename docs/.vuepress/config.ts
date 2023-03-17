@@ -6,7 +6,7 @@ export default defineUserConfig({
 	// theme: hopeTheme({
 
 	// }),
-	base: '/TuziNotes/',
+	base: '/tuzinotes/',
 	head: [
 		// 设置 favor.ico，docs/.vuepress/public 下
 		['link', { rel: 'icon', href: '/images/Rab4.png' }],
