@@ -1,0 +1,1 @@
+import{_ as e,W as s,X as t,Y as _}from"./framework-5fb02f36.js";const c={},o=_("p",null,"tuzi",-1),n=[o];function l(r,a){return s(),t("div",null,n)}const d=e(c,[["render",l],["__file","slides.html.vue"]]);export{d as default};

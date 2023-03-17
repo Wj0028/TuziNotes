@@ -1,0 +1,1 @@
+import{_ as o,W as t,X as a,Y as e,$ as c}from"./framework-5fb02f36.js";const d={},r=e("h1",{id:"code",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#code","aria-hidden":"true"},"#"),c(" Code")],-1),s=[r];function n(_,i){return t(),a("div",null,s)}const l=o(d,[["render",n],["__file","Code.html.vue"]]);export{l as default};

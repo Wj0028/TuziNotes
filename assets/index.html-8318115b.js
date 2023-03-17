@@ -1,0 +1,1 @@
+import{_ as t,W as n,X as o,Y as e,$ as a}from"./framework-5fb02f36.js";const c={},s=e("h2",{id:"介绍",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#介绍","aria-hidden":"true"},"#"),a(" 介绍")],-1),r=e("blockquote",null,[e("p",null,"小程序相关")],-1),_=[s,r];function d(l,i){return n(),o("div",null,_)}const u=t(c,[["render",d],["__file","index.html.vue"]]);export{u as default};
